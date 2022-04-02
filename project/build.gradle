@@ -64,7 +64,7 @@ task deployReports(dependsOn:['reports']){
 		
         exec {
             workingDir = 'build/gh-pages'                                
-            commandLine = ['git', 'add', '.']
+            commandLine = ['git', 'add', '-f', '.']
         }
         exec {
             workingDir = 'build/gh-pages'
