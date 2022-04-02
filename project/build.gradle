@@ -78,3 +78,7 @@ task deployReports(dependsOn:['reports']){
  
 
 }
+
+test {
+    ignoreFailures = true
+}
