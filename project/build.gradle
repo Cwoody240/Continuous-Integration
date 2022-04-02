@@ -58,6 +58,7 @@ task deployReports(dependsOn:['reports']){
     }
 	
 	copy{
+	
  		from "build/reports"
 		into "build/gh-pages"
 		}
