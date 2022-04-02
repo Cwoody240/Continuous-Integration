@@ -23,13 +23,7 @@ jobs:
    - name: Build and test the plugin             
       working-directory: ./project
       timeout-minutes: 20
-      run: ./gradlew build
-
-   - name: Deploy
-        uses: Cwoody240/main@v4.2.5  
-        with:
-          branch: gh-pages                                 
-          folder: build/reports    
+      run: ./gradlew build 
                     
     - name: Deploy reports using an SSH agent
       working-directory: ./project
